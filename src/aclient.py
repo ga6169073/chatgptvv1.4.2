@@ -30,6 +30,7 @@ class aclient(discord.Client):
         self.activity = discord.Activity(type=discord.ActivityType.listening, name="/chat | /help")
         self.isPrivate = False
         self.is_replying_all = os.getenv("REPLYING_ALL")
+        self.is_replying_all = "False"
         self.replying_all_discord_channel_id = os.getenv("REPLYING_ALL_DISCORD_CHANNEL_ID")
         self.openAI_email = os.getenv("OPENAI_EMAIL")
         self.openAI_password = os.getenv("OPENAI_PASSWORD")
